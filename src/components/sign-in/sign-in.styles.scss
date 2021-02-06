@@ -1,0 +1,13 @@
+.sign-in {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .buttons {
+    display: flex;
+    width: inherit;
+    justify-content: space-between;
+  }
+}
