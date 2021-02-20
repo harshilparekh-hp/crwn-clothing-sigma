@@ -87,9 +87,7 @@ class SignUp extends React.Component {
             required
           />
 
-          <CustomButton type='submit' onClick={this.handleSubmit}>
-            Sign Up
-          </CustomButton>
+          <CustomButton type='submit'>Sign Up</CustomButton>
         </form>
       </div>
     );

@@ -1,6 +1,5 @@
 import React from 'react';
 import './collectionitem.styles.scss';
-import img from '../../assets/images/shop-img/hats/brown-brim.png';
 
 const CollectionItem = ({ id, name, price, imageUrl }) => {
   return (
