@@ -1,11 +1,11 @@
 import { createSelector } from 'reselect';
 
-const selectCart = (state) => state.cart;
+const selectCart = (state) => state.cart; //this is input selector
 
 export const selectCartItems = createSelector(
   [selectCart],
   (cart) => cart.cartItems
-);
+); //this is output selector which returns modified selector. This is called "Memoize Selector".
 
 export const selectCartHidden = createSelector(
   [selectCart],

@@ -21,6 +21,7 @@ class App extends React.Component {
     console.log('From Apps', this.props);
 
     this.unsubscribeFromAuth = auth.onAuthStateChanged(async (userAuth) => {
+      //onAuthStateChanged() is a method which will get called everytime a state changes(user sign-in or signout)
       if (userAuth) {
         const userRef = await createUserProfileDocument(userAuth);
         userRef.onSnapshot((snapshot) => {
@@ -39,6 +40,8 @@ class App extends React.Component {
   componentWillUnmount() {
     this.unsubscribeFromAuth();
   }
+
+  //Switch - The moment that the react router match the routes, it will render that particular path, and not other routes. It gives more controls over multiple routes.
 
   render() {
     return (
